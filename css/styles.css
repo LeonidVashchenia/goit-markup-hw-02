@@ -123,7 +123,11 @@ body {
 
 /* ----team----- */
 .team {
-  color: var(--bkc-second-color);
+  background-color: var(--bkc-second-color);
+}
+
+.card {
+  background-color: var(--bkc-first-color);
 }
 
 .team-title {
