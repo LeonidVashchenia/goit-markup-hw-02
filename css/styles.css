@@ -2,17 +2,18 @@
 :root {
   --brand-first-color: #2196f3;
   --brand-second-color: #212121;
+  --brand-third-color: #188CE8;
   --bkc-first-color: #FFFFFF;
   --bkc-second-color: #F5F4FA;
   --bkc-third-color: #2F303A;
-
-  --brand-text-color: #757575;
+  --brand-text-first-color: #757575;
+  --brand-text-second-color: #000000;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--brand-text-color);
-  background-color: var(--brand-bkc-color);
+  color: var(--brand-text-first-color);
+  background-color: var(--bkc-first-color);
   text-decoration: none
 }
 
@@ -41,7 +42,7 @@ body {
 }
 
 .logo-second-text {
-  color: #000000;
+  color: var(--brand-text-second-color);
 }
 
 .logo-third-text {
@@ -63,7 +64,6 @@ body {
 .link:focus,
 .link:active {
   color: var(--brand-first-color);
-  cursor: pointer;
 }
 
 .site-nav .link.current {
@@ -136,7 +136,7 @@ body {
 }
 
 .team-text {
-  color: var(--brand-text-color);
+  color: var(--brand-text-first-color);
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -176,13 +176,12 @@ body {
 .footer-contact-item:focus,
 .footer-contact-item:active {
   color: var(--brand-first-color);
-  cursor: pointer;
 }
 
 
 /* ----buttun----- */
 .button {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   align-items: center;
   text-align: center;
@@ -192,12 +191,11 @@ body {
 
 .button-hero {
   color: var(--bkc-first-color);
-  background-color: #188CE8;
+  background-color: var(--brand-first-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.06em;
   display: flex;
   font-weight: 700;
-
   line-height: 1.87;
 }
 
@@ -214,13 +212,15 @@ body {
 .button-filter:active {
   color: var(--bkc-first-color);
   background-color: var(--brand-first-color);
+  cursor: pointer;
 }
 
 .button-hero:hover,
 .button-hero:focus,
 .button-hero:active {
-  color: var(--brand-second-color);
-  background-color: var(--bkc-second-color);
+  color: var(--bkc-first-color);
+  background-color: #188CE8;
+  cursor: pointer;
 }
 
 .colection-title {
@@ -232,7 +232,7 @@ body {
 }
 
 .colection-text {
-  color: var(--brand-text-color);
+  color: var(--brand-text-first-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
